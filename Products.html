@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Products | ABC Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .product-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h3 {
+            margin-top: 0;
+        }
+        .product-description {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .product-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .highlight {
+            color: #e74c3c;
+        }
+        .green {
+            color: green;
+            font-style: italic;
+        }
+        .blue {
+            color: blue;
+        }
+        .important {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .download-section a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .download-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ABC Company Products</h1>
+    <p>Your One-Stop Shop for Quality Products</p>
+</header>
+
+<div class="container">
+    <section class="product-section">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product1.jpg" alt="Product 1">
+            </div>
+            <div class="product-info">
+                <h3>Product 1 Name</h3>
+                <p class="product-description">
+                    <span class="important">Product 1</span> is a top-rated item with amazing features. It is <span class="green">eco-friendly</span> and built to last. <span class="highlight">Get yours today</span> and enjoy a 1-year warranty!
+                </p>
+                <p class="product-price">$99.99</p>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product2.jpg" alt="Product 2">
+            </div>
+            <div class="product-info">
+                <h3>Product 2 Name</h3>
+                <p class="product-description">
+                    This is <em>Product 2</em>, designed with <span class="blue">state-of-the-art technology</span>. With its advanced features and sleek design, it's perfect for modern lifestyles.
+                </p>
+                <p class="product-price">$149.99</p>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product3.jpg" alt="Product 3">
+            </div>
+            <div class="product-info">
+                <h3>Product 3 Name</h3>
+                <p class="product-description">
+                    <strong>Product 3</strong> is designed for maximum performance and reliability. It's perfect for both <span class="highlight">personal</span> and <span class="highlight">professional</span> use.
+                </p>
+                <p class="product-price">$199.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Choose Our Products?</h2>
+        <p>Our products are designed with the customer in mind. We focus on quality, usability, and value for money. Here are a few reasons why our customers love our products:</p>
+
+        <!-- Unordered List -->
+        <ul>
+            <li><span class="highlight">Top-notch quality</span> and craftsmanship</li>
+            <li>Affordable prices for every budget</li>
+            <li>Excellent customer support and service</li>
+            <li><span class="green">Long-lasting durability</span> and performance</li>
+        </ul>
+
+        <p>We offer a variety of <strong>services</strong> to meet your needs.</p>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>Browse our products</li>
+            <li>Order online with easy checkout</li>
+            <li>Get fast delivery to your doorstep</li>
+        </ol>
+    </section>
+
+    <!-- Downloadable File -->
+    <section class="download-section">
+        <h2>Download Our Product Brochure</h2>
+        <a href="brochure.pdf" download="ABC_Company_Brochure.pdf">Click here to download</a>
+    </section>
+
+    <!-- External Link -->
+    <p>Visit our <a href="https://www.example.com" target="_blank">official website</a> for more details!</p>
+
+    <!-- Email Link -->
+    <p>If you have any questions, feel free to <a href="mailto:contact@abccompany.com">email us</a>.</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 ABC Company. All Rights Reserved.</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+</footer>
+
+<script>
+    // Automatically display the last modified date
+    document.getElementById('last-modified').textContent = document.lastModified;
+</script>
+
+</body>
+</html>
