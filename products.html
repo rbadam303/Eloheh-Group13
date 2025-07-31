@@ -16,7 +16,6 @@
       color: white;
       padding: 20px 40px;
       text-align: center;
-      font-family: 'Georgia', serif;
     }
     nav {
       background-color: #005f5f;
@@ -31,46 +30,49 @@
     }
     main {
       padding: 40px;
-      font-family: 'Arial', sans-serif;
     }
-    .product-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
+    h2 {
+      color: #008080;
+    }
+    .product-links {
+      margin-bottom: 30px;
+    }
+    .product-links a {
+      display: inline-block;
+      margin: 5px 15px;
+      color: darkred;
+      font-weight: bold;
+      text-decoration: underline;
     }
     .product-card {
+      margin-bottom: 60px;
       background-color: white;
-      border: 1px solid #ddd;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      width: calc(33% - 20px);
+      padding: 25px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      transition: transform 0.2s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
     .product-card img {
-      max-width: 100%;
-      height: 150px;
-      object-fit: cover;
+      width: 100%;
+      max-width: 500px;
       border-radius: 6px;
-      margin-bottom: 15px;
-    }
-    .product-card:hover {
-      transform: translateY(-5px);
+      margin: 10px auto;
+      display: block;
     }
     .product-card h3 {
       color: darkslateblue;
     }
     .product-card p {
-      font-size: 14px;
-      text-align: center;
+      font-size: 15px;
+      line-height: 1.6;
     }
     .note {
       font-size: 18px;
       color: crimson;
+      font-style: italic;
+    }
+    ul, ol {
+      padding-left: 20px;
     }
     footer {
       background-color: #008080;
@@ -79,10 +81,11 @@
       padding: 20px;
       margin-top: 40px;
     }
-    @media (max-width: 768px) {
-      .product-card {
-        width: 100%;
-      }
+    a.download-link {
+      display: block;
+      margin-top: 15px;
+      color: darkblue;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -90,7 +93,7 @@
 
 <header>
   <h1>Eloheh Healthcare</h1>
-  <p><strong>Healing from nature.</strong> <span class="note"><em>Science meets soul.</em></span></p>
+  <p><strong>Healing from Nature.</strong> <span class="note">Science meets soul.</span></p>
 </header>
 
 <nav>
@@ -100,34 +103,105 @@
 </nav>
 
 <main>
-  <h2>Our Products</h2>
-  <p class="note"><u>Natural solutions</u> to everyday health — crafted with <strong>care</strong> and tested for purity.</p>
+  <h2>Our Product Line</h2>
+  <p>Explore the natural healthcare products crafted with care and backed by research. Click a product to jump to its details:</p>
 
-  <div class="product-section">
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=Herbal+Boosters" alt="Herbal Immune Boosters" />
-      <h3>Herbal Immune Boosters</h3>
-      <p>Organic herbs and adaptogens for immune defense.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=Essential+Oils" alt="Essential Oils" />
-      <h3>Essential Oils</h3>
-      <p>Blends for <u>sleep</u>, stress, and clarity. <strong>Therapeutic-grade</strong>.</p>
-    </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300x150?text=Skincare" alt="Natural Skincare" />
-      <h3>Natural Skincare</h3>
-      <p><em>Botanical ingredients</em> that soothe and restore your skin barrier.</p>
-    </div>
+  <div class="product-links">
+    <a href="#immune-boosters">Herbal Immune Boosters</a>
+    <a href="#essential-oils">Essential Oils</a>
+    <a href="#skincare">Natural Skincare</a>
+    <a href="#telehealth">Telehealth Services</a>
+    <a href="#supplements">Nutritional Supplements</a>
+    <a href="#starter-kits">Wellness Starter Kits</a>
   </div>
 
-  <h3>Benefits of Our Products</h3>
-  <ul>
-    <li>No synthetic additives</li>
-    <li>Eco-friendly packaging</li>
-    <li>Backed by research</li>
-  </ul>
+  <!-- Product 1 -->
+  <div class="product-card" id="immune-boosters">
+    <h3>Herbal Immune Boosters</h3>
+    <img src="https://via.placeholder.com/500x250?text=Immune+Boosters" alt="Herbal Immune Boosters" />
+    <p>
+      Our Herbal Immune Boosters are a <strong>blend of echinacea, elderberry, astragalus</strong> and other powerful adaptogens. They are designed to naturally stimulate your body’s immune defenses and help fight off common colds, flu, and seasonal allergies.
+    </p>
+    <ul>
+      <li>Organic, vegan, and gluten-free</li>
+      <li>No artificial preservatives</li>
+      <li>Recommended by herbalists</li>
+    </ul>
+    <a href="files/immune-info.pdf" class="download-link" download>📄 Download Product Sheet</a>
+  </div>
 
-  <h3>How to Get Started</h3>
-  <ol>
-    <li>Choose
+  <!-- Product 2 -->
+  <div class="product-card" id="essential-oils">
+    <h3>Essential Oils & Aromatherapy</h3>
+    <img src="https://via.placeholder.com/500x250?text=Essential+Oils" alt="Essential Oils" />
+    <p>
+      <u>Experience tranquility and balance</u> through our therapeutic-grade essential oils. Blends include:
+    </p>
+    <ol>
+      <li>Calm Mind – lavender, chamomile, bergamot</li>
+      <li>Energy Boost – citrus, peppermint, rosemary</li>
+      <li>Focus Blend – eucalyptus, lemon, basil</li>
+    </ol>
+    <p><strong>Usage:</strong> Diffuse, apply topically, or mix with bath salts.</p>
+    <a href="files/oils-info.pdf" class="download-link" download>📄 Download Product Sheet</a>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product-card" id="skincare">
+    <h3>Natural Skincare Solutions</h3>
+    <img src="https://via.placeholder.com/500x250?text=Natural+Skincare" alt="Natural Skincare" />
+    <p>
+      Rejuvenate your skin with our <span class="note">plant-powered skincare line</span>. These formulas are packed with botanical extracts and oils that hydrate, heal, and balance your skin’s microbiome.
+    </p>
+    <ul>
+      <li>Soothing Aloe & Tea Tree Cleanser</li>
+      <li>Rosehip & Vitamin E Moisturizer</li>
+      <li>Green Clay Detox Mask</li>
+    </ul>
+    <a href="files/skincare-info.pdf" class="download-link" download>📄 Download Product Sheet</a>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product-card" id="telehealth">
+    <h3>Telehealth Services</h3>
+    <img src="https://via.placeholder.com/500x250?text=Telehealth+Care" alt="Telehealth Services" />
+    <p>
+      Eloheh’s <strong>Telehealth Platform</strong> connects you to certified naturopaths and wellness consultants from the comfort of your home. Services include:
+    </p>
+    <ul>
+      <li>Herbal treatment consultations</li>
+      <li>Diet & supplement recommendations</li>
+      <li>Mental health support using integrative practices</li>
+    </ul>
+    <a href="files/telehealth-info.pdf" class="download-link" download>📄 Download Service Guide</a>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product-card" id="supplements">
+    <h3>Nutritional Supplements</h3>
+    <img src="https://via.placeholder.com/500x250?text=Nutritional+Supplements" alt="Nutritional Supplements" />
+    <p>
+      Our science-backed nutritional formulas support energy, digestion, and restful sleep. <em>Made with non-GMO ingredients and lab-tested for purity.</em>
+    </p>
+    <ol>
+      <li>Daily Vitality Multivitamin</li>
+      <li>Sleep Support with Melatonin + Valerian</li>
+      <li>Probiotic Blend for Gut Health</li>
+    </ol>
+    <a href="files/supplement-info.pdf" class="download-link" download>📄 Download Supplement Guide</a>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product-card" id="starter-kits">
+    <h3>Wellness Starter Kits</h3>
+    <img src="https://via.placeholder.com/500x250?text=Wellness+Kit" alt="Wellness Starter Kits" />
+    <p>
+      Get everything you need to begin your wellness journey in one beautifully packed kit. Includes:
+    </p>
+    <ul>
+      <li>Mini herbal supplement sampler</li>
+      <li>Aromatherapy roll-ons</li>
+      <li>Skincare samples and health tracking guide</li>
+    </ul>
+    <a href="files/starter-kit-info.pdf" class="download-link" download>
+
