@@ -1,261 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eloheh | Products</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eloheh Products - Northside Music Company</title>
+  <link href="/templates/northsidemusic2023/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/templates/northsidemusic2023/css/main.css" rel="stylesheet" />
+  <link href="/templates/northsidemusic2023/css/main_menu.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/68eb3ade97.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      margin: 0;
-      background-color: #f4f8f9;
-      color: #333;
-    }
-    header {
-      background-color: #008080;
-      color: white;
-      padding: 20px 40px;
-      text-align: center;
-    }
-    nav {
-      background-color: #005f5f;
-      padding: 10px 40px;
-      text-align: center;
-    }
-    nav a {
-      color: #ffffff;
-      margin: 0 15px;
+    /* Custom styles to match your example */
+    .product-list a {
       text-decoration: none;
-      font-weight: bold;
+      color: #0056b3;
     }
-    main {
-      padding: 40px;
-    }
-    h2 {
-      color: #008080;
-    }
-    .product-links {
-      margin-bottom: 30px;
-    }
-    .product-links a {
-      display: inline-block;
-      margin: 5px 15px;
-      color: darkred;
-      font-weight: bold;
+    .product-list a:hover {
       text-decoration: underline;
     }
-    .product-card {
-      margin-bottom: 60px;
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 25px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    .product-info {
+      border-top: 1px solid #ccc;
+      margin-top: 30px;
+      padding-top: 30px;
     }
-    .product-card img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 6px;
-      margin: 10px auto;
-      display: block;
-    }
-    .product-card h3 {
-      color: darkslateblue;
-    }
-    .product-card p {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-    .note {
-      font-size: 18px;
-      color: crimson;
-      font-style: italic;
-    }
-    ul, ol {
-      padding-left: 20px;
-    }
-    footer {
-      background-color: #008080;
+    .subButton {
+      display: inline-block;
+      background-color: #007bff;
       color: white;
+      padding: 10px 15px;
+      margin: 5px 10px 15px 0;
+      border-radius: 5px;
+      cursor: pointer;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      font-weight: 600;
     }
-    a.download-link {
-      display: block;
-      margin-top: 15px;
-      color: darkblue;
-      font-weight: bold;
+    .subButton:hover {
+      background-color: #0056b3;
+      color: white;
+      text-decoration: none;
+    }
+    h2 {
+      margin-top: 50px;
     }
   </style>
 </head>
-<body>
+<body class="site wrapper-fluid">
+  <div class="container-lg" id="container">
 
-<header>
-  <h1>Eloheh Healthcare</h1>
-  <p><strong>Healing from Nature.</strong> <span class="note">Science meets soul.</span></p>
-</header>
+    <!-- Left sidebar (simplified for brevity) -->
+    <div class="row" id="contentContainer">
+      <div class="col-lg-4" id="left">
+        <div id="leftLogo">
+          <a href="/"><img src="/templates/northsidemusic2023/images/Logo.png" alt="Northside Music Logo" /></a>
+        </div>
+        <nav id="leftMods">
+          <ul class="mod-menu mod-list nav">
+            <li class="nav-item item-103 deeper parent">
+              <span class="mod-menu__heading nav-header">Pianos</span>
+              <ul class="mod-menu__sub list-unstyled small">
+                <li class="nav-item item-116"><a href="/pianos/shop#top">Shop Pianos</a></li>
+                <li class="nav-item item-104"><a href="/pianos#rentals">Rent a Piano</a></li>
+                <li class="nav-item item-121"><a href="/pianos#player">Player Pianos</a></li>
+                <li class="nav-item item-122"><a href="/services#top">Piano Services</a></li>
+              </ul>
+            </li>
+            <!-- Add other menu items here -->
+          </ul>
+        </nav>
+      </div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="products.html">Products</a>
-  <a href="mailto:creator@eloheh.com">Contact Me</a>
-</nav>
+      <!-- Main content -->
+      <div class="col-lg-8" id="center">
+        <div id="centerPadding">
+          <div id="banner" class="mb-4">
+            <img src="/templates/northsidemusic2023/images/happy-homes-kokomo-lafayette-rent-buy-pianos-keyboards-organs-piano-selections-northside-music-lafayette-indiana-steinway-yamaha-kawai-wurlitzer-baldw.png" alt="Banner" class="img-fluid" />
+            <div id="bannerAddress" class="mt-2">1008 South St | Lafayette, IN 47901 | (765)-423-2323</div>
+          </div>
 
-<main>
-  <h2>Our Product Line</h2>
-  <p>Explore the natural healthcare products crafted with care and backed by research. Click a product to jump to its details:</p>
+          <h1>Eloheh Products</h1>
+          <p>Explore our exclusive range of Eloheh instruments. Click any product below to view detailed descriptions.</p>
 
-  <div class="product-links">
-    <a href="#immune-boosters">Herbal Immune Boosters</a>
-    <a href="#essential-oils">Essential Oils</a>
-    <a href="#skincare">Natural Skincare</a>
-    <a href="#telehealth">Telehealth Services</a>
-    <a href="#supplements">Nutritional Supplements</a>
-    <a href="#starter-kits">Wellness Starter Kits</a>
-  </div>
+          <div class="product-list mb-5">
+            <ul>
+              <li><a href="#eloheh-piano1">Eloheh Grand Piano Model G-100</a></li>
+              <li><a href="#eloheh-piano2">Eloheh Upright Piano Model U-50</a></li>
+              <li><a href="#eloheh-digital1">Eloheh Digital Piano D-88</a></li>
+              <li><a href="#eloheh-organ1">Eloheh Classic Organ C-250</a></li>
+            </ul>
+          </div>
 
-  <!-- Product 1 -->
-  <div class="product-card" id="immune-boosters">
-    <h3>Herbal Immune Boosters</h3>
-    <img src="https://via.placeholder.com/500x250?text=Immune+Boosters" alt="Herbal Immune Boosters" />
-    <p>
-      Our Herbal Immune Boosters are a <strong>blend of echinacea, elderberry, astragalus</strong> and other powerful adaptogens. They are designed to naturally stimulate your body’s immune defenses and help fight off common colds, flu, and seasonal allergies.
-    </p>
-    <ul>
-      <li>Organic, vegan, and gluten-free</li>
-      <li>No artificial preservatives</li>
-      <li>Recommended by herbalists</li>
-    </ul>
-    <a href="files/immune-info.pdf" class="download-link" download>📄 Download Product Sheet</a>
-  </div>
+          <!-- Detailed product info section -->
+          <div class="product-info">
 
-  <!-- Product 2 -->
-  <div class="product-card" id="essential-oils">
-    <h3>Essential Oils & Aromatherapy</h3>
-    <img src="https://via.placeholder.com/500x250?text=Essential+Oils" alt="Essential Oils" />
-    <p>
-      <u>Experience tranquility and balance</u> through our therapeutic-grade essential oils. Blends include:
-    </p>
-    <ol>
-      <li>Calm Mind – lavender, chamomile, bergamot</li>
-      <li>Energy Boost – citrus, peppermint, rosemary</li>
-      <li>Focus Blend – eucalyptus, lemon, basil</li>
-    </ol>
-    <p><strong>Usage:</strong> Diffuse, apply topically, or mix with bath salts.</p>
-    <a href="files/oils-info.pdf" class="download-link" download>📄 Download Product Sheet</a>
-  </div>
+            <h2 id="eloheh-piano1">Eloheh Grand Piano Model G-100</h2>
+            <img src="/images/products/eloheh-grand-g100.jpg" alt="Eloheh Grand Piano Model G-100" class="img-fluid mb-3" />
+            <p><strong>Description:</strong> The Eloheh Grand Piano Model G-100 is a masterpiece of craftsmanship combining exquisite sound with elegant design. Crafted with premium spruce and maple wood, this grand piano delivers a rich, resonant tone ideal for professional performances and concert halls.</p>
+            <p><strong>Specifications:</strong></p>
+            <ul>
+              <li>Size: 6'7" (200 cm) length</li>
+              <li>Finish: High gloss ebony or custom finishes available</li>
+              <li>Keyboard: 88 keys, weighted action</li>
+              <li>Soundboard: Solid spruce for optimal resonance</li>
+              <li>Warranty: 10 years on parts and workmanship</li>
+            </ul>
+            <p><strong>Price:</strong> Call for pricing</p>
 
-  <!-- Product 3 -->
-  <div class="product-card" id="skincare">
-    <h3>Natural Skincare Solutions</h3>
-    <img src="https://via.placeholder.com/500x250?text=Natural+Skincare" alt="Natural Skincare" />
-    <p>
-      Rejuvenate your skin with our <span class="note">plant-powered skincare line</span>. These formulas are packed with botanical extracts and oils that hydrate, heal, and balance your skin’s microbiome.
-    </p>
-    <ul>
-      <li>Soothing Aloe & Tea Tree Cleanser</li>
-      <li>Rosehip & Vitamin E Moisturizer</li>
-      <li>Green Clay Detox Mask</li>
-    </ul>
-    <a href="files/skincare-info.pdf" class="download-link" download>📄 Download Product Sheet</a>
-  </div>
+            <h2 id="eloheh-piano2">Eloheh Upright Piano Model U-50</h2>
+            <img src="/images/products/eloheh-upright-u50.jpg" alt="Eloheh Upright Piano Model U-50" class="img-fluid mb-3" />
+            <p><strong>Description:</strong> The Eloheh Upright Piano Model U-50 offers classic sound quality in a space-saving design perfect for home studios, classrooms, or smaller performance spaces. Durable, stylish, and built with attention to detail.</p>
+            <p><strong>Specifications:</strong></p>
+            <ul>
+              <li>Height: 50" (127 cm)</li>
+              <li>Finish: Satin walnut or polished mahogany</li>
+              <li>Keyboard: 88 keys with responsive action</li>
+              <li>Pedals: Soft, sostenuto, and damper</li>
+              <li>Warranty: 7 years on parts and workmanship</li>
+            </ul>
+            <p><strong>Price:</strong> Call for pricing</p>
 
-  <!-- Product 4 -->
-  <div class="product-card" id="telehealth">
-    <h3>Telehealth Services</h3>
-    <img src="https://via.placeholder.com/500x250?text=Telehealth+Care" alt="Telehealth Services" />
-    <p>
-      Eloheh’s <strong>Telehealth Platform</strong> connects you to certified naturopaths and wellness consultants from the comfort of your home. Services include:
-    </p>
-    <ul>
-      <li>Herbal treatment consultations</li>
-      <li>Diet & supplement recommendations</li>
-      <li>Mental health support using integrative practices</li>
-    </ul>
-    <a href="files/telehealth-info.pdf" class="download-link" download>📄 Download Service Guide</a>
-  </div>
+            <h2 id="eloheh-digital1">Eloheh Digital Piano D-88</h2>
+            <img src="/images/products/eloheh-digital-d88.jpg" alt="Eloheh Digital Piano D-88" class="img-fluid mb-3" />
+            <p><strong>Description:</strong> The Eloheh Digital Piano D-88 blends traditional piano feel with modern technology. Equipped with authentic weighted keys, advanced sound samples, and multiple connectivity options, it’s perfect for both beginners and advanced players.</p>
+            <p><strong>Specifications:</strong></p>
+            <ul>
+              <li>88 fully weighted keys with graded hammer action</li>
+              <li>128-note polyphony</li>
+              <li>Built-in speakers with 2x 15W output</li>
+              <li>Connectivity: USB, MIDI, headphone jack</li>
+              <li>Multiple voices: Grand Piano, Electric Piano, Strings, and more</li>
+              <li>Warranty: 5 years limited</li>
+            </ul>
+            <p><strong>Price:</strong> Starting at $1,999</p>
 
-  <!-- Product 5 -->
-  <div class="product-card" id="supplements">
-    <h3>Nutritional Supplements</h3>
-    <img src="https://via.placeholder.com/500x250?text=Nutritional+Supplements" alt="Nutritional Supplements" />
-    <p>
-      Our science-backed nutritional formulas support energy, digestion, and restful sleep. <em>Made with non-GMO ingredients and lab-tested for purity.</em>
-    </p>
-    <ol>
-      <li>Daily Vitality Multivitamin</li>
-      <li>Sleep Support with Melatonin + Valerian</li>
-      <li>Probiotic Blend for Gut Health</li>
-    </ol>
-    <a href="files/supplement-info.pdf" class="download-link" download>📄 Download Supplement Guide</a>
-  </div>
+            <h2 id="eloheh-organ1">Eloheh Classic Organ C-250</h2>
+            <img src="/images/products/eloheh-organ-c250.jpg" alt="Eloheh Classic Organ C-250" class="img-fluid mb-3" />
+            <p><strong>Description:</strong> The Eloheh Classic Organ C-250 delivers warm, full-bodied sound with classic drawbar controls and modern digital enhancements. Ideal for church, theater, or home use.</p>
+            <p><strong>Specifications:</strong></p>
+            <ul>
+              <li>61-note manual keyboard plus 25-note pedalboard</li>
+              <li>Drawbars: 9 classic drawbars</li>
+              <li>Built-in reverb and chorus effects</li>
+              <li>Connectivity: Audio out, MIDI, headphone jack</li>
+              <li>Dimensions: 48" W x 24" D x 36" H</li>
+              <li>Warranty: 5 years limited</li>
+            </ul>
+            <p><strong>Price:</strong> Call for pricing</p>
 
-  <!-- Product 6 -->
-  <div class="product-card" id="starter-kits">
-    <h3>Wellness Starter Kits</h3>
-    <img src="https://via.placeholder.com/500x250?text=Wellness+Kit" alt="Wellness Starter Kits" />
-    <p>
-      Get everything you need to begin your wellness journey in one beautifully packed kit. Includes:
-    </p>
-    <ul>
-      <li>Mini herbal supplement sampler</li>
-      <li>Aromatherapy roll-ons</li>
-      <li>Skincare samples and health tracking guide</li>
-    </ul>
-    <a href="files/starter-kit-info.pdf" class="download-link" download>
+          </div>
 
-<!-- Insert just above the footer -->
-<section id="product-details" style="padding: 40px; background-color: #eef6f6;">
-  <h2 style="color: #005f5f;">Detailed Product Information</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-    <!-- Column for Immune Boosters -->
-    <div style="flex: 1 1 300px; background: #fff; padding: 20px; border-radius: 8px;">
-      <h3 id="immune-details" style="color: darkslateblue;">Herbal Immune Boosters</h3>
-      <img src="https://via.placeholder.com/400x200?text=Immune+Boosters" alt="Immune Boosters" style="width:100%; border-radius:6px;">
-      <p>
-        <strong>Formulation:</strong> Echinacea, Elderberry, Astragalus, Ginger<br>
-        <em>Benefits:</em> Supports immune resilience, reduces season‑related fatigue<br>
-        <span style="color: crimson;">Directions:</span> Take one capsule daily with food
-      </p>
-      <ul>
-        <li>Certified organic herbs</li>
-        <li>Third‑party lab tested</li>
-        <li>Suitable for adults and children (6+)</li>
-      </ul>
+          <div class="actions mt-4">
+            <a href="#top" class="btnLearnMore subButton">Back to Top</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Column for Essential Oils -->
-    <div style="flex: 1 1 300px; background: #fff; padding: 20px; border-radius: 8px;">
-      <h3 id="oils-details" style="color: darkslateblue;">Essential Oils & Aromatherapy</h3>
-      <img src="https://via.placeholder.com/400x200?text=Essential+Oils" alt="Essential Oils" style="width:100%; border-radius:6px;">
-      <p>
-        <strong>Blends available:</strong> Calm Mind, Energy Boost, Focus Blend<br>
-        <em>Usage:</em> Diffuse 3–4 drops for 30 minutes or apply topically with carrier oil<br>
-        <span style="color: crimson;">Safety:</span> Not for internal use; consult if pregnant
-      </p>
-      <ol>
-        <li>Calm Mind – lavender, chamomile, bergamot</li>
-        <li>Energy Boost – citrus, peppermint, rosemary</li>
-        <li>Focus Blend – eucalyptus, lemon balm, basil</li>
-      </ol>
-    </div>
-    <!-- Column for Skincare -->
-    <div style="flex: 1 1 300px; background: #fff; padding: 20px; border-radius: 8px;">
-      <h3 id="skincare-details" style="color: darkslateblue;">Natural Skincare Solutions</h3>
-      <img src="https://via.placeholder.com/400x200?text=Skincare+Line" alt="Skincare Products" style="width:100%; border-radius:6px;">
-      <p>
-        <strong>Core ingredients:</strong> Aloe vera, Rosehip oil, Green clay<br>
-        <em>Best suited for:</em> Sensitive, acne-prone, or dehydrated skin<br>
-        <span style="color: crimson;">Application:</span> Cleanse–tone–moisturize daily
-      </p>
-      <ul>
-        <li>Plant‑based and cruelty‑free</li>
-        <li>Noncomedogenic formulas</li>
-        <li>Neutral pH balanced</li>
-      </ul>
-    </div>
-  </div>
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="#top" style="text-decoration: underline; color: darkred; font-size: 16px;">Back to Top</a>
-  </div>
-</section>
+
+    <!-- Footer -->
+    <div class="row" id="footer" style="margin-top: 60px;">
+      <div class="col-lg-12 text-end">
+        <div>
+          NORTHSIDE MUSIC CO.<br />
+          1008 South St | Lafayette, IN 47901 | (765)-423-2323
+        </div>
+        <div class="mt-2">
+          <a href="https://www.facebook.com/northsidemusicco" target="_blank" rel="noopener">
+            <img src="/templates/northsidemusic2023/images/SOCIAL-MEDIA-IC
