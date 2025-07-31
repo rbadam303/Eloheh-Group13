@@ -1,133 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eloheh | Healthcare Products & Services</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: #f4f8f9;
-            color: #333;
-        }
-        header {
-            background-color: #008080;
-            color: white;
-            padding: 20px 40px;
-            text-align: center;
-        }
-        nav {
-            background-color: #005f5f;
-            padding: 10px 40px;
-            text-align: center;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 40px;
-        }
-        h2 {
-            color: #008080;
-        }
-        .product-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        .product-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            width: calc(33% - 20px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 20px;
-            transition: transform 0.2s ease-in-out;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        .product-card h3 {
-            color: #005f5f;
-        }
-        .product-card p {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #008080;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .product-card {
-                width: 100%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eloheh | Products</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #f4f8f9;
+      color: #333;
+    }
+    header {
+      background-color: #008080;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      font-family: 'Georgia', serif;
+    }
+    nav {
+      background-color: #005f5f;
+      padding: 10px 40px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 40px;
+      font-family: 'Arial', sans-serif;
+    }
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: calc(33% - 20px);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card h3 {
+      color: darkslateblue;
+    }
+    .product-card p {
+      font-size: 14px;
+      text-align: center;
+    }
+    .note {
+      font-size: 18px;
+      color: crimson;
+    }
+    footer {
+      background-color: #008080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .product-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Eloheh Healthcare</h1>
-    <p>Empowering Wellness, Naturally</p>
+  <h1>Eloheh Healthcare</h1>
+  <p><strong>Healing from nature.</strong> <span class="note"><em>Science meets soul.</em></span></p>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="products.html">Products</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="mailto:creator@eloheh.com">Contact Me</a>
 </nav>
 
 <main>
-    <h2>Our Products & Services</h2>
-    <p>At Eloheh, we are committed to delivering high-quality, natural healthcare solutions that support holistic well-being. Our carefully curated product line is backed by science and crafted with care to serve families, clinics, and wellness centers. Explore our range below:</p>
+  <h2>Our Products</h2>
+  <p class="note"><u>Natural solutions</u> to everyday health — crafted with <strong>care</strong> and tested for purity.</p>
 
-    <div class="product-section">
-        <div class="product-card">
-            <h3>Herbal Immune Boosters</h3>
-            <p>Formulated from organic herbs and adaptogens, our immune boosters help strengthen your body's natural defenses. Ideal for seasonal support and general immune resilience.</p>
-        </div>
-
-        <div class="product-card">
-            <h3>Essential Oils & Aromatherapy</h3>
-            <p>Therapeutic-grade essential oils crafted for calming, energizing, and healing benefits. Available in blends for sleep, stress, and focus.</p>
-        </div>
-
-        <div class="product-card">
-            <h3>Natural Skincare Solutions</h3>
-            <p>Our skin care products use plant-based ingredients to nourish and heal without harsh chemicals. Great for sensitive and acne-prone skin.</p>
-        </div>
-
-        <div class="product-card">
-            <h3>Telehealth Services</h3>
-            <p>Get access to qualified wellness consultants and healthcare professionals from the comfort of your home. Includes herbal guidance and preventive care consultations.</p>
-        </div>
-
-        <div class="product-card">
-            <h3>Nutritional Supplements</h3>
-            <p>Scientifically-formulated vitamins and minerals tailored for energy, digestion, sleep, and overall vitality. Gluten-free and vegan options available.</p>
-        </div>
-
-        <div class="product-card">
-            <h3>Wellness Starter Kits</h3>
-            <p>Perfect for individuals or families beginning their wellness journey. Kits include guides, samples, and tools to establish a natural health routine.</p>
-        </div>
+  <div class="product-section">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x150?text=Herbal+Boosters" alt="Herbal Immune Boosters" />
+      <h3>Herbal Immune Boosters</h3>
+      <p>Organic herbs and adaptogens for immune defense.</p>
     </div>
-</main>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x150?text=Essential+Oils" alt="Essential Oils" />
+      <h3>Essential Oils</h3>
+      <p>Blends for <u>sleep</u>, stress, and clarity. <strong>Therapeutic-grade</strong>.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x150?text=Skincare" alt="Natural Skincare" />
+      <h3>Natural Skincare</h3>
+      <p><em>Botanical ingredients</em> that soothe and restore your skin barrier.</p>
+    </div>
+  </div>
 
-<footer>
-    &copy; 2025 Eloheh Healthcare. All rights reserved. | <a href="https://rbadam303.github.io/MGMT382-Group13/" style="color: #fff; text-decoration: underline;">Visit Our Homepage</a>
-</footer>
+  <h3>Benefits of Our Products</h3>
+  <ul>
+    <li>No synthetic additives</li>
+    <li>Eco-friendly packaging</li>
+    <li>Backed by research</li>
+  </ul>
 
-</body>
-</html>
+  <h3>How to Get Started</h3>
+  <ol>
+    <li>Choose
