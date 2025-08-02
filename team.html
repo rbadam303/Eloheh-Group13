@@ -2,16 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF‑8">
-  <title>Eloheh Team Page</title>
+  <title>Eloheh Navigation</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #19B4BC; color: white; margin: 0; padding: 20px; }
+    a { color: #FFFFFF; text-decoration: none; display: block; margin: 8px 0; }
+    a:hover { text-decoration: underline; }
+    h2 { font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    footer { position: absolute; bottom: 10px; width: 100%; font-size: 0.8rem; }
+  </style>
 </head>
-<frameset cols="220px,*" frameborder="1">
-  <frame src="nav.html" name="nav" title="Navigation">
-  <frame src="products.html" name="main" title="Main Content">
-</frameset>
-<noframes>
-  <p>Your browser does not support frames. Please visit our <a href="products.html">Products</a> page.</p>
-</noframes>
-<footer style="text-align:center; font-size:0.8rem; margin:10px;">
-  Team page last modified: <script>document.write(new Date().toLocaleDateString());</script>
-</footer>
+<body>
+  <h2>Eloheh (Team 13)</h2>
+  <p>Team Members:</p>
+  <ul>
+    <li>Aashi Singh</li>
+    <li>Ronak Badam</li>
+    <li>Anshul S</li>
+    <li>Gabriel McDaniel</li>
+    <li>Anika Rao</li>
+  </ul>
+  <nav>
+    <a href="products.html" target="main">Products</a>
+    <a href="services.html" target="main">Services</a>
+    <a href="management.html" target="main">Management</a>
+    <a href="story.html" target="main">Story & History</a>
+    <a href="testimonials.html" target="main">Testimonials</a>
+  </nav>
+
+  <footer>
+    Nav frame last modified: <script>document.write(new Date().toLocaleDateString());</script>
+  </footer>
+</body>
 </html>
