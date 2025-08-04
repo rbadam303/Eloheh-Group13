@@ -1,36 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF‑8">
-  <title>Eloheh Navigation</title>
+  <meta charset="UTF-8">
+  <title>Eloheh Team Home</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #19B4BC; color: white; margin: 0; padding: 20px; }
-    a { color: #FFFFFF; text-decoration: none; display: block; margin: 8px 0; }
-    a:hover { text-decoration: underline; }
-    h2 { font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.5rem; }
-    footer { position: absolute; bottom: 10px; width: 100%; font-size: 0.8rem; }
+    body {
+      margin: 40px;
+      font-family: "Arial", sans-serif;
+      background-color: #FFFFFF;
+      color: #333333;
+      line-height: 1.6;
+    }
+    h1 {
+      font-family: "Times New Roman", serif;
+      color: #19B4BC;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: "Georgia", serif;
+      color: #006E70;
+      font-size: 1.8rem;
+      margin-top: 30px;
+    }
+    .company-motto {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #19B4BC;
+      margin-bottom: 40px;
+    }
+    .team-info {
+      background-color: #f0fdfa;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid #19B4BC;
+    }
+    .team-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #006E70;
+      text-decoration: underline;
+    }
+    ul {
+      font-size: 1.1rem;
+      margin-left: 2em;
+    }
+    li {
+      margin: 8px 0;
+      color: #333333;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #555555;
+      text-align: center;
+      border-top: 1px solid #19B4BC;
+      padding-top: 15px;
+    }
+    .welcome-text {
+      font-size: 1.1rem;
+      text-align: center;
+      margin: 30px 0;
+      color: #006E70;
+    }
   </style>
 </head>
 <body>
-  <h2>Eloheh (Team 13)</h2>
-  <p>Team Members:</p>
-  <ul>
-    <li>Aashi Singh</li>
-    <li>Ronak Badam</li>
-    <li>Anshul S</li>
-    <li>Gabriel McDaniel</li>
-    <li>Anika Rao</li>
-  </ul>
-  <nav>
-    <a href="products.html" target="main">Products</a>
-    <a href="services.html" target="main">Services</a>
-    <a href="management.html" target="main">Management</a>
-    <a href="story.html" target="main">Story & History</a>
-    <a href="testimonials.html" target="main">Testimonials</a>
-  </nav>
+  <h1>Eloheh Healthcare</h1>
+  <div class="company-motto">
+    <strong><i>"Empowering Your Wellness Journey"</i></strong>
+  </div>
+  
+  <div class="welcome-text">
+    Welcome to our comprehensive healthcare solutions platform
+  </div>
+
+  <div class="team-info">
+    <h2>Team Information</h2>
+    <p class="team-number">Team Number: 13</p>
+    
+    <h2>Team Members</h2>
+    <ul>
+      <li><strong>Aashi Singh</strong></li>
+      <li><strong>Ronak Badam</strong></li>
+      <li><strong>Anshul S</strong></li>
+      <li><strong>Gabriel McDaniel</strong></li>
+      <li><strong>Anika Rao</strong></li>
+    </ul>
+  </div>
 
   <footer>
-    Nav frame last modified: <script>document.write(new Date().toLocaleDateString());</script>
+    Team home page last modified: <script>document.write(new Date().toLocaleDateString());</script>
   </footer>
 </body>
 </html>
